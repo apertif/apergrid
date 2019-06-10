@@ -16,8 +16,8 @@ from modules.grid_functions import *
 
 #Argument parsing
 parser = argparse.ArgumentParser(description='Define and visualize grid')
-parser.add_argument('-s','--separation',default=5.0,type=float,
-                    help='Separation of grid in arcminutes')
+parser.add_argument('-s','--separation',default=4,type=int,
+                    help='Separation of grid in number of pointings between beam centers')
 parser.add_argument('-o','--output',default='calgrid',type=str,
                     help='Base name for output files')
 parser.add_argument('-c','--cboffsets',default='cb_offsets.txt',
